@@ -1,0 +1,41 @@
+<body class="bg-grey">
+    <div class="row margenesDivs" style="max-width:100%;min-height:85vh">
+        <div class="col-2"></div>
+        <div class="col-8 paddingSocial">
+            <div class="partemedia1">
+                {{#each publicaciones}}
+                <div class="post1">
+                    <h2>{{Titulo}}</h2>
+                    <h5>{{SubTitulo}}</h5>
+                    <img src="{{Imagen}}">
+                    <p>{{Descripcion}}</p>
+                </div>
+                <div class="paddingEndPost"></div>
+                {{/each}}
+                {{#each comentarios}}
+                <div class="post1">
+                    <a href="/users/{{id_creador}}" class="not-active"><h4>{{nombre}}</h4></a>
+                    <h5>{{comentario}}</h5>
+                </div>
+                <div class="paddingEndPost"></div>
+                {{/each}}
+                {{#if comentar}}
+                    <form class="post1" action="/comments" method="post">
+                        <div class="form-group">
+                        <label for="exampleInputComentario">Comentario</label>
+                        <textarea class="form-control" id="comentario" name="comentario" rows="5" placeholder="Comentario" required></textarea>
+                        </div>
+                        <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Comentario</button>
+                    </div>
+                    </form>
+                    <div class="paddingEndPost"></div>
+                {{else}}
+                {{/if}}
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    
+    
+</body>

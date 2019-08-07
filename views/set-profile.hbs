@@ -1,0 +1,35 @@
+<body class="background1">
+    <div class="container-fluid" style="min-height:85vh">
+        <div class="row">
+            <div class="col-xl-4 col-lg-3 col-md-2 col-sm-1"></div>
+            
+            <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 col-xs-12">
+                
+                <form class="form-container2" action="/set-profile" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <div class="Acceso1">
+                            <h1>Perfil Social</h1>
+                            <p>Por favor complete los siguientes campos para poder acceder a las funciones sociales</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputNombre1">Nombre</label>
+                        <input type="text" class="form-control" id="Nombre1" name="Nombre1" aria-describedby="emailHelp" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputDescripcion1">Pequeña autobiografia</label>
+                        <textarea class="form-control" id="Descripcion1" name="Descripcion1" rows="5" placeholder="Autobiografia" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile1">Subir imagen</label>
+                        <input type="file" name="ElFile" id="ElFile" accept="image/x-png,image/gif,image/jpeg">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Guardar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xl-4 col-lg-3 col-md-2 col-sm-1"></div>
+        </div>
+    </div>
+</body>

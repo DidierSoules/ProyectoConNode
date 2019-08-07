@@ -1,0 +1,39 @@
+<body class="background1">
+    <div class="container-fluid" style="min-height:85vh">
+        <div class="row">
+            <div class="col-xl-4 col-lg-3 col-md-2 col-sm-1"></div>
+            
+            <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 col-xs-12">
+                
+                <form class="form-container3" action="/newpost" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <div class="Acceso1">
+                            <h1>Crear publicacion</h1>
+                            <p>Por favor complete los siguientes campos para crear una publicacion</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputTitulo1">Titulo</label>
+                        <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Titulo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputSubtitulo1">Subtitulo</label>
+                        <input type="text" class="form-control" id="subtitulo" name="subtitulo" placeholder="Subtitulo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputDescripcion1">Descripcion</label>
+                        <textarea class="form-control" id="descripcion" name="descripcion" rows="5" placeholder="Descripcion" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile1">Subir imagen</label>
+                        <input type="file" name="Nfile" id="Nfile" accept="image/x-png,image/gif,image/jpeg">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Publicar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xl-4 col-lg-3 col-md-2 col-sm-1"></div>
+        </div>
+    </div>
+</body>

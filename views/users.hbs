@@ -1,0 +1,29 @@
+<body class="bg-grey">
+    <div class="row margenesDivs" style="max-width:100%;min-height:85vh">
+        <div class="col-2"></div>
+        <div class="col-8 paddingSocial">
+            <div class="partemedia1">
+                {{#each publicaciones}}
+                <div class="post1">
+                    <h2>{{Titulo}}</h2>
+                    <h5>{{SubTitulo}}</h5>
+                    <img src="{{Imagen}}">
+                    <p>{{Descripcion}}</p>
+                </div>
+                <div class="paddingEndPost"></div>
+                {{/each}}
+                {{#if publicaciones}}
+                {{else}}
+                <div class="post1">
+                    <h2>El usuario no ha creado ningun post.</h2>
+                </div>
+                {{/if}}
+                
+                
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    
+    
+</body>

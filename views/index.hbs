@@ -1,0 +1,39 @@
+<body class="bg-grey">
+    <div class="row margenesDivs" style="max-width:100%; min-height:85vh">
+        <div class="col-8 paddingColIzq">
+            <div class="parteizquierda1">
+                {{#each publicaciones}}
+                <div class="post1">
+                    <a href="/post/{{id}}" class="not-active"><h2>{{Titulo}}</h2></a>
+                    <h5>{{SubTitulo}}</h5>
+                    <img src="{{Imagen}}">
+                    <p>{{Descripcion}}</p>
+                </div>
+                <div class="paddingEndPost"></div>
+                {{/each}}
+            </div>
+        </div>
+        <div class="col-4 paddingColDer">
+            <div class="partederecha1">
+                <div class="post1">
+                    <h2>About us</h2>
+                    <img src="/images/company_logo.jpg" style="height:200px;">
+                    <p>Email: horizongames@gmail.com</p>
+                </div>
+                <div class="paddingEndPost"></div>
+                <div class="post1">
+                    <h3>Most popular posts</h3>
+                    <table class="table1">
+                        <tbody>
+                            {{#each populares}}
+                                <tr>
+                                    <td><a href="/post/{{id}}" class="popularPost">{{Titulo}}</a></td>
+                                </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>  
+</body>
